@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    background: #111;
+    font-family: 'Poppins',sans-serif;
+}
+.herosection {
+    width: 100%;
+    min-height: 100vh;
+    backdrop-filter: blur(1px);
+    pointer-events: auto;
+    position: relative; 
+}
+
+.herosection section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    text-align: center;
+    pointer-events: none;
+}
+
+.textBox h1{
+    font-size: 3.4em;
+}
+
+.textBox h1 span{
+    color: #00bfff;
+}
+
+.textBox p{
+    font-size: 1.2em;
+}
+
+.textBox .homeBtn{
+    font-family: 'Poppins';
+    padding: 8px 18px;
+    margin: 16px 12px;
+    font-size: 26px;
+    background-color: transparent;
+    color: var(--i);
+    outline: none;
+    border: 3px solid var(--i);
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.textBox .homeBtn:hover{
+    background-color: var(--i);
+    color: #000;
+}
+
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+    z-index: -1;
+    
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;
+}
+/* 
+.colorBox:hover{
+    background: var( --primary-color);
+    transition-duration: 0s;
+} */
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: var( --primary-color);
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px); /* Adjust if needed */
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-color, #fff); /* fallback white */
+  pointer-events: all; /* Enable interaction */
+}
+
+#typed-text{
+    text-shadow: 10px 10px 10px var(--primary-color);
+}

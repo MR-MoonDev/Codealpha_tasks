@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muneeb Here</title>
+    <link rel="icon" href="./assets/images/my.webp">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/hersosection.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/education.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/certificates.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="./assets/images/my.webp" alt="Muneeb Logo">
+            <span>Muneeb</span>
+        </div>
+        <nav class="nav-links" id="navLinks"></nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <!-- hero section -->
+
+    <div class="herosection">
+        <div class="hero-content">
+            <div id="typed-text"></div>
+        </div>
+    </div>
+    <!-- About Sections -->
+    <section id="about" class="section">
+
+        <div id="left-about">
+            <div id="about-img"></div>
+            <div class="about-btns">
+                <div class="about-btn"><a href="">Resume</a></div>
+                <div class="about-btn"><a href="">Linkdin</a></div>
+                <div class="about-btn"><a href="">Github</a></div>
+            </div>
+        </div>
+
+        <div id="right-about">
+            <div>
+                <div id="about-intro"></div>
+                <h2 class="about-overview"></h2>
+            </div>
+            <div class="about-content">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section  -->
+    <section id="education" class="section">
+        <div id="education-intro">What I have Studied so far
+            <span>
+                <h2 class="education-heading">Education</h2>
+            </span>
+        </div>
+        <div class="institude">
+            <div class="card">
+                <div class="bg">
+                    <div>
+                        <div class="study" id="uni-degree"></div>
+                        <div>
+                            <div class="institude-name" id="university-name"></div>
+                            <div class="year" id="university-year"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blob"></div>
+            </div>
+            <div class="card">
+                <div class="bg">
+                    <div>
+                        <div class="study" id="inter-degree"></div>
+                        <div>
+                            <div class="institude-name" id="college-name"></div>
+                            <div class="year" id="college-year"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blob"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- skills  -->
+    <section id="skills" class="section">
+        <div id="Technical">
+            <div>Technical Proficiencies</div>
+            <h2>Skills</h2>
+        </div>
+        <div class="container" id="cardContainer"></div>
+    </section>
+
+    <!-- certificates  -->
+
+    <section id="certificates" class="section">
+        <div>
+            <div>Continuous Learning</div>
+            <h2>Certifications</h2>
+        </div>
+        <div class="allcertificates" id="certificatesContainer"></div>
+
+    </section>
+
+    <!-- Projects  -->
+
+     <section id="projects" class="section">
+        <div>Innovative Creations</div>
+        <h2>My Projects</h2>
+        <div class="projects-wrapper" id="projectsWrapper">
+        </div>
+    </section>
+
+    <!-- Contact  -->
+
+    <div class="contact-bg-wrap">
+        <section id="contact" class="section">
+            <div class="form-container">
+                <form id="contact-form" class="form">
+                    <h2>Contact</h2>
+
+                    <div class="form-group">
+                        <label for="email">Company Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">How Can We Help You?</label>
+                        <textarea name="message" id="message" rows="10" cols="50" required></textarea>
+                    </div>
+
+                    <button type="submit">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Send</span>
+                    </button>
+                </form>
+
+            </div>
+            <div>
+                <div class="cube-loader">
+                    <div class="cube-top"></div>
+                    <div class="cube-wrapper">
+                        <span style="--i:0" class="cube-span">THANK YOU FOR</span>
+                        <span style="--i:1" class="cube-span">Reaching ME</span>
+                        <span style="--i:2;" class="cube-span" >THANK YOU FOR</span>
+                        <span style="--i:3" class="cube-span">Reaching ME</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-bg-animation"></div>
+        </section>
+    </div>
+
+
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim"></div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/herosection.js"></script>
+    <script type="module" src="./js/about.js"></script>
+    <script type="module" src="./js/education.js"></script>
+    <script type="module" src="./js/skills.js"></script>
+    <script type="module" src="./js/certificate.js"></script>
+    <script type="module" src="./js/projects.js"></script>
+    <script type="module" src="./js/contact.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("EDy8UwBByh152DJQ3");
+        })();
+    </script>
+</body>
+
+</html>

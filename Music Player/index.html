@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <div class="contanier">
+    <h2>Music Player</h2>
+    <div id="music-pic">
+      <img src="./assets/images/image1.jpg" alt="">
+    </div>
+    <div>
+      <audio id="music" src="./assets/music/Drum.mp3">
+
+      </audio>
+    </div>
+    <div>
+      <button class="music-btn Back"><i class="fa-solid fa-backward-step"></i></button>
+      <button class="music-btn Play"><i class="fa-solid fa-play"></i></button>
+      <button class="music-btn Forward"><i class="fa-solid fa-forward-step"></i></button>
+    </div>
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" min="0" step="1">
+      <span id="duration">0:00</span>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

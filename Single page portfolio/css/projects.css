@@ -1,0 +1,95 @@
+#projects {
+  padding: 50px 20px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+#projects h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem); /* responsive heading */
+  margin-bottom: 30px;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.project-card {
+  width: 30%;
+  min-width: 280px;
+  background-color: var(--section-background);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px var(--box-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 25px var(--primary-color);
+}
+
+.project-card video {
+ .project-card video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+}
+
+}
+
+.project-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  color: var(--link-color);
+}
+
+.view-btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .project-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-wrapper {
+    gap: 30px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}

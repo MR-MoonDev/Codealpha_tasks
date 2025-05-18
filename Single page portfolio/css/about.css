@@ -1,0 +1,97 @@
+#about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px; 
+}
+
+
+#left-about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+#about-img {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 8 / 8;
+  background-image: url('../assets/images/my.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 0 auto; /* center it */
+}
+
+.about-btn{
+  border: 1px solid var(--primary-color);
+  padding: 5px;
+  border-radius: 10px;
+  width: max-content;
+}
+.about-btn a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.about-btn a:hover {
+  color:white;
+  transition: 0.5s;
+}
+
+.about-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#right-about {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #about{
+    height: 100%;
+    justify-content: center;
+  }
+
+  .about-overview {
+    font-size: 1.5rem;
+  }
+
+  .about-content {
+    font-size: 0.95rem;
+  }
+
+  .about-btns {
+    justify-content: center;
+  }
+
+  .about-btn a {
+    width: 100%;
+    text-align: center;
+  }
+}
+#right-about{
+    width: 100vh;
+    height: fit-content;
+    padding: 20px;
+    font-size: 1rem;
+}

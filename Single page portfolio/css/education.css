@@ -1,0 +1,101 @@
+#education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.education-heading{
+    text-align: center;
+}
+
+.institude{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.card {
+  position: relative;
+  width: 600px; 
+  height: 300px; 
+  border-radius: 8px; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bg {
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  outline: 1px solid white;
+}
+
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color:var(--primary-color);
+  opacity: 1;
+  filter: blur(120px);
+  animation: blob-bounce 3s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+@media (max-width: 768px) {
+  #education {
+    height: 100%;
+}}
+
+.study{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.institude-name{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.year{
+    text-align: end;
+    font-size: 1.2rem;
+}
+
