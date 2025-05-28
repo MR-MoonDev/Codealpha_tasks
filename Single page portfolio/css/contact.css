@@ -6,6 +6,7 @@
 
 #contact {
   display: flex;
+  
   align-items: center;
   justify-content: space-around;
   gap: 20px;
@@ -210,7 +211,7 @@ button:hover svg {
 
   transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
   background: linear-gradient(to bottom,
-      hsl(330, 3.13%, 25.1%) 0%,
+      hsla(277, 72%, 38%, 0.801) 0%,
       hsl(245.27, 21.71%, 32.06%) 5.5%,
       hsl(250.67, 34.1%, 36.88%) 12.1%,
       hsl(255.61, 42.28%, 40.7%) 19.6%,
@@ -232,7 +233,7 @@ button:hover svg {
   position: absolute;
   width: 75px;
   height: 75px;
-  background: hsl(330, 3.13%, 25.1%) 0%;
+  background: hsl(271, 90%, 40%) 0%;
   transform: rotateX(90deg) translateZ(37.5px);
   transform-style: preserve-3d;
 }
@@ -245,8 +246,8 @@ button:hover svg {
   background: hsl(276.61, 42.28%, 40.7%) 19.6%;
   transform: translateZ(-90px);
   filter: blur(10px);
-  box-shadow: 0 0 10px #323232,
+  box-shadow: 0 0 10px #eb0404,
     0 0 20px var(--primary-color) 19.6%,
-    0 0 30px #323232,
+    0 0 30px #f80b0b,
     0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
 }

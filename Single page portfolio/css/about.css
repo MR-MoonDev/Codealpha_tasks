@@ -53,7 +53,7 @@
 }
 #right-about {
   flex: 1;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
 .about-content {
