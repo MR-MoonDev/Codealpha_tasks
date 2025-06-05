@@ -10,16 +10,12 @@ const techList = [
   { name: "Tailwind", image: "assets/images/skills/Tailwind.png" }
 ];
 
-const container = document.getElementById("cardContainer");
+const gallery = document.querySelector(".gallery");
 
-techList.forEach((tech, index) => {
-  const card = document.createElement("div");
-  card.className = "glass";
-  card.setAttribute("data-text", tech.name);
-  card.style.setProperty("--r", `${(index - techList.length / 2) * 10}`);
-
-  // Fix: use tech.image instead of tech.icon
-  card.innerHTML = `<img src="${tech.image}" alt="${tech.name}" style="width: 60px; height: 60px;" />`;
-
-  container.appendChild(card);
+techList.forEach((tech) => {
+  const img = document.createElement("img");
+  img.src = tech.image;
+  img.alt = tech.name;
+  img.title = tech.name; // shows name on hover
+  gallery.appendChild(img);
 });

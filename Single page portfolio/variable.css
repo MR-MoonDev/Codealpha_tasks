@@ -5,7 +5,7 @@
   --text-color: #fff;           /* White text */
   --hover-color: #6911ac;       /* Neon purple hover */
   --link-color: #ccc;           /* Light gray text for links */
-  --box-shadow--box-shadow: rgba(255, 0, 255, 0.3); /* Neon glow shadow */
+  --box-shadow: rgba(255, 0, 255, 0.3); /* Neon glow shadow */
   --border-color: #333;         /* Dark border */
   --section-background: #1e1e1e; /* Slightly lighter background for alternating sections */
 }
