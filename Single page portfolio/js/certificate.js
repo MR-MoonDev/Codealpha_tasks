@@ -6,7 +6,7 @@ const certificates = [
         name: "HTML Tags"
     },
     {
-        image: "./assets/images/certificates/css.jpg",
+        image: "./assets/images/certificates/Css.jpg",
         alt: "CSS Certificate",
         link: "https://olympus.mygreatlearning.com/certificates?pb_id=581",
         name: "CSS"
